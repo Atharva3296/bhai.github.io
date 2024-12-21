@@ -19,8 +19,11 @@ document.addEventListener('DOMContentLoaded', () => {
             <p>Total Invested Amount: ₹${totalInvestment.toFixed(2)}</p>
             <p>Total Returns: ₹${totalReturns.toFixed(2)}</p>
             <p>Total Corpus: ₹${totalAmount.toFixed(2)}</p>
-            `;
-        
-        
+            `
+
+        resultElement.classList.remove('hidden');
+        setTimeout(() => {
+            resultElement.classList.add('show');
+        }, 50);
     }
 });
